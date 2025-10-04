@@ -2,9 +2,9 @@ name: CI Pipleline
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
-jobs: 
+jobs:
   build:
     runs-on: ubuntu-latest
 
@@ -18,7 +18,7 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
-        run: npmm Install
+        run: npm Install
 
       - name: Run tests
         run: npm test
